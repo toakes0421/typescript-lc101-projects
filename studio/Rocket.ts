@@ -6,8 +6,8 @@ export class Rocket implements Payload {
     massKg: number;
     name: string;
     totalCapacityKg: number;
-    cargoItems: Cargo[];
-    astronauts: Astronaut[];
+    cargoItems: Cargo[] = [];
+    astronauts: Astronaut[] = [];
 
     constructor(name:string, totalCapacityKg:number) {
         this.name = name;
